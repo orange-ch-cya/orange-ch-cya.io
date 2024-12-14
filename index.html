@@ -1,57 +1,84 @@
-*{
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
-	list-style: none;
-}
-.header,.nav,.container,.footer{
-	/* 这四个都要左浮动 */
-	float: left;
-	/* 让他们填充浏览器 */
-	width: 100%;
-}
-.header{
-	background: #cccccc;
-	padding: 20px;
-	text-align: center;
-}
-.nav{
-	background: #333333;
-}
-.nav a{
-	color: #ffffff;
-	padding: 10px 20px;
-	display: inline-block;/* 以块显示 */
-}
-.nav a:hover{ 
-	background: #bbbbbb;
-	color: #000000;
-}
-/* 左右两边固定200宽度 */
-	.lside{
-		width: 200px;
-		float: left;
-		background: #008000;
-	}
-	.rside{
-		width: 200px;
-		float: right;
-		background: #008000;
-	}
-	.content{
-		margin:  0px 205px;
-	}
-	.lside,.rside,.content{
-		padding: 5px;
-	}
-.footer{
-	padding: 10px;
-	background: #cccccc;
-	text-align: center;
-}
-@media screen and (max-width:700px){
-	.lside,.rside,.container{
-		width: 100%;
-		margin: 0px;
-	}
-}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>首页|By inf_cysy</title>
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<div class="main">
+			<div class="header">
+				<!--头-->
+				<!-- 主要用于logo/广告 -->
+				<h1>头部</h1>
+			</div>
+			<div class="nav">
+				<!--菜单-->
+				<a href="#">导航项</a>
+				<a href="#">导航项</a>
+				<a href="#">导航项</a>
+				<a href="#">导航项</a>
+			</div>
+			<div class="container">
+				<!--主体-->
+				<!-- 3个div，左中右 -->
+				<div class="lside">
+					<!-- 左边栏 -->
+					<p>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+						lllllllll<br/>
+					</p>
+				</div>
+				<div class="rside">
+					<!-- 右边栏 -->
+					<p>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+						rrrrrrrrr<br/>
+					</p>
+				</div>
+				<div class="content">
+					<!--中间，自适应，所以放在最后-->
+					<p>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+						mmmmmmmmm<br/>
+					</p>
+				</div>
+			</div>
+			<div class="footer">
+				<!--底-->
+				<!-- 网站底部：版权声明，备案信息，联系方式，友情链接…… -->
+				<p>版权声明，备案信息，联系方式，友情链接</p>
+			</div>
+		</div>
+	</body>
+</html>
